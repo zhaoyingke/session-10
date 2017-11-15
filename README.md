@@ -81,7 +81,7 @@ var chat = {
 }
 ```
 
-## Accédez au données des types composites
+## Accédez aux données des types composites
 
 Pour lire les valeurs d'un tableur on utilise un index qui commence à 0.
 
@@ -93,7 +93,7 @@ couleurs[2] // => "noir"
 couleurs[10] // => undefined!
 ```
 
-Pour les lire les valeurs d'un objet on utilise le nom de chaque propriété:
+Pour lire les valeurs d'un objet on utilise le nom de chaque propriété:
 
 ```javascript
 chat.prenom // => "Yoko"
@@ -110,7 +110,7 @@ chat[ma_cle] // 2
 ```
 
 Pour atteindre une valeur qui n'est pas au premier niveau d'un objet composite
-on peut suit la même logique mais en enchaînant les notations:
+on suit la même logique mais en enchaînant les notations:
 
 ```javascript
 chat.couleurs[0] // => "blanc"
