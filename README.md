@@ -119,3 +119,20 @@ chat.proprietaire.prenom // => "Pierre"
 chat.proprietaire.metiers[0] // => "Développeur"
 chat.proprietaire.employeur.nom // => "ICIJ"
 ```
+
+## Data
+
+Number of victims of text-message fraud by province (Canada):
+
+* **Source:** Canadian Anti-Fraud Centre
+* **Data (CSV):** [data/number-victims-text-message-fraud-2016.csv](data/number-victims-text-message-fraud-2016.csv)
+
+U.S. Unemployment Rate, 2006-2017:
+
+* **Source:** Bureau of Labor Statistics
+* **Data (CSV):** [data/us-unemployment-rate-2006-2017.csv](data/us-unemployment-rate-2006-2017.csv)
+
+Trust in media reporting:
+
+* **Source:** Infratest dimap
+* **Data (CSV):** [data/trust-in-media-reporting-2015.csv](data/trust-in-media-reporting-2015.csv)
