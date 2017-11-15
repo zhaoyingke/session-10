@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Session 10</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="app container mt-5">
+      <h3>Exemple de line chart</h3>
+      <line-chart :height="200" class="mt-3 mb-5"></line-chart>
+      <h3>Exemple de bar chart</h3>
+      <bar-chart :height="200" class="mt-3 mb-5"></bar-chart>
+      <h3>Exemple de pie chart</h3>
+      <pie-chart :height="200" class="mt-3 mb-5"></pie-chart>
+      <h3>Exemple de doughnut chart</h3>
+      <doughnut-chart :height="200" class="mt-3 mb-5"></doughnut-chart>
+    </div>
+
+    <!-- Libraries -->
+    <script src="vendors/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
+    <!-- Nos fichiers -->
+    <script src="charts/line.js"></script>
+    <script src="charts/bar.js"></script>
+    <script src="charts/pie.js"></script>
+    <script src="charts/doughnut.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
