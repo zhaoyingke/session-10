@@ -3,12 +3,16 @@ Vue.component('doughnut-chart', {
   props: ['data', 'options'],
   mounted () {
     var data = this.data || {
-      labels: ['Olga', 'Elsa', 'Lina'],
+      labels: ["Paris","Hauts-de-Seine","Yvelines","Seine-et-Marne", "Autres"],
       datasets: [
         {
-          label: 'GitHub Commits',
-          backgroundColor: ['#f779b8', '#f87979', '#f7b879'],
-          data: [40, 20, 10]
+          label: 'Affaire de corruption en IDF par département',
+          backgroundColor: ['#54abab', '#9bd1d1', '#9bd1d1', '#9bd1d1', '#9bd1d1'],
+          data: [42 , 18 , 8 , 6 , 13],
+          datalabels: {
+            align: 'center',
+            anchor: 'center'
+          }
         }
       ]
     };
@@ -17,13 +21,19 @@ Vue.component('doughnut-chart', {
       tooltips: {
         enabled: false
       },
+      legend: {
+        display: false
+      },
 			plugins: {
 				datalabels: {
           display: true,
-					color: '#fff',
+					color: '#254444',
 					font: {
 						weight: 'bold'
-					}
+					},
+          formatter: function(v, ctx) {
+            return [v, data.labels[ctx.dataIndex]]
+          }
 				}
 			}
     };

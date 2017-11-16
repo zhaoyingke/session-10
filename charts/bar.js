@@ -3,12 +3,12 @@ Vue.component('bar-chart', {
   props: ['data', 'options'],
   mounted () {
     var data = this.data || {
-      labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+      labels: [2007,2008,2009,2010,2011,2012,2013,2014,2015],
       datasets: [
         {
-          label: 'GitHub Commits',
-          backgroundColor: '#b879f7',
-          data: [40, 20, 10, 15, 17, 20, 25, 30, 40, 50, 50, 40],
+          label: 'Rhinoceros tués chaque année par le braconnage en Afrique du Sud',
+          backgroundColor: '#f87979',
+          data: [13, null,122,333,448,668,1004,1215,749],
           datalabels: {
             align: 'end',
             anchor: 'end'
@@ -21,10 +21,13 @@ Vue.component('bar-chart', {
       tooltips: {
         enabled: false
       },
+      legend: {
+        display: false
+      },
 			plugins: {
 				datalabels: {
           display: true,
-					color: '#9260c4',
+					color: '#c46060',
 					font: {
 						weight: 'bold'
 					},

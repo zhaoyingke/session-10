@@ -7,7 +7,7 @@ Vue.component('line-chart', {
       datasets: [
         {
           label: 'GitHub Commits',
-          borderColor: '#f87979',
+          borderColor: '#9260c4',
           backgroundColor: 'transparent',
           data: [40, 20, 10, 15, 17, 20, 25, 30, 40, 50, 50, 40]
         }
@@ -15,6 +15,9 @@ Vue.component('line-chart', {
     };
 
     var options = this.options || {
+      legend: {
+        display: false
+      },
       scales: {
         yAxes: [
           {
